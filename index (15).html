@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Torres Agropecuária — Altamira</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1ecdb;--bg2:#e1d9bd;--ink:#26301a;--mute:#67704f;--acc:#5b7a2b;--acc2:#b8782c;--line:#d3c9a4;--card:#f9f5e6;--dk:#232d14;--on:#fff;--r:10px;--br:6px;--hf:'Bitter',Georgia,serif;--bf:'Source Sans 3',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:color-mix(in srgb,var(--dk) 94%,var(--acc));--bg2:color-mix(in srgb,var(--dk) 86%,var(--acc));--ink:#f3f1ec;--mute:color-mix(in srgb,#fff 58%,var(--dk));--line:color-mix(in srgb,var(--dk) 76%,var(--acc));--card:color-mix(in srgb,var(--dk) 90%,var(--acc))}}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:70px;overflow-anchor:none}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--bf);padding-bottom:76px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.hf{font-family:var(--hf);text-transform:none;letter-spacing:-.02em;font-weight:800;line-height:1.04}
+.w{max-width:1100px;margin:0 auto;padding:0 22px}
+.in{position:fixed;inset:0;z-index:200;pointer-events:none;display:grid;place-items:center;animation:gone 0s 3.2s forwards}
+.in>b{grid-area:1/1;z-index:2;text-align:center;color:#fff;font:400 clamp(34px,11vw,92px)/1.05 var(--hf);text-transform:none;letter-spacing:-.02em;animation:fo .5s 1.1s forwards;padding:0 14px}
+.in .bars{grid-area:1/1;position:absolute;inset:0;display:flex}
+@keyframes gone{to{visibility:hidden}}@keyframes fo{to{opacity:0}}@keyframes ofade{to{opacity:0}}
+@keyframes fi{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes mq{to{transform:translateX(-50%)}}@keyframes bob{50%{transform:translateY(-10px)}}
+@keyframes bl{to{transform:translateY(-101%)}}@keyframes sl{to{transform:translateX(calc(var(--d)*101%))}}
+@keyframes cc{from{clip-path:circle(150% at 50% 50%)}to{clip-path:circle(0 at 50% 50%)}}
+@keyframes dash{to{stroke-dashoffset:0}}@keyframes fc{to{filter:blur(0)}}
+@keyframes bo{0%{transform:translateY(-140px);opacity:0}45%{transform:none;opacity:1}62%{transform:translateY(-26px)}78%{transform:none}90%{transform:translateY(-8px)}100%{transform:none}}
+@keyframes zm{0%{transform:scale(.7);opacity:0}35%{opacity:1}100%{transform:scale(1.6);opacity:0}}
+@keyframes ty{to{width:var(--w)}}@keyframes dl{to{transform:translateX(-101%)}}@keyframes dr{to{transform:translateX(101%)}}
+@keyframes wp{to{clip-path:inset(0 0 0 100%)}}@keyframes px{to{opacity:0}}@keyframes eq{50%{transform:scaleY(.25)}}
+.in-t{background:var(--dk);animation:ofade .6s 1.9s forwards,gone 0s 3.2s forwards}
+.prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:90;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .w{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font:800 20px var(--hf);text-transform:none;letter-spacing:-.02em;font-weight:800}.logo span{color:var(--acc)}
+nav{display:none;gap:24px;font-size:14px;font-weight:500;color:var(--mute)}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--acc2),var(--acc));color:var(--on);padding:15px 26px;border-radius:var(--br);font:700 15px var(--bf);border:0;cursor:pointer;transition:transform .2s,filter .3s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn.wa{background:#25d366;color:#062b13}.btn.o{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}.btn.o:hover{background:var(--ink);color:var(--bg)}
+header .btn{padding:10px 16px;font-size:14px}
+.tag{display:inline-block;font:700 12px var(--bf);letter-spacing:.16em;text-transform:uppercase;color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 50%,transparent);padding:6px 12px;border-radius:99px}
+h1{font-size:clamp(40px,11vw,88px);margin:18px 0 18px}h1 em{font-style:normal;color:var(--acc)}
+h2{font-size:clamp(30px,7vw,54px);margin:14px 0 12px}h2 em{font-style:normal;color:var(--acc)}
+.lead{color:var(--mute);font-size:18px;max-width:480px}.sub{color:var(--mute);max-width:540px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero{padding:36px 0 48px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 0,color-mix(in srgb,var(--acc) 22%,transparent),transparent 55%),radial-gradient(ellipse at 0 100%,color-mix(in srgb,var(--acc2) 16%,transparent),transparent 55%)}
+.hero .w{display:grid;gap:30px}
+.hero .tag,.hero h1,.hero .lead,.hero .cta,.hero .stage{animation:up 1s both}
+.hero .tag{animation-delay:2.1s}.hero h1{animation-delay:2.2s}.hero .lead{animation-delay:2.35s}.hero .cta{animation-delay:2.5s}.hero .stage{animation-delay:2.3s}
+.hl-center .hero .ht{text-align:center;margin:0 auto}.hl-center .hero .lead{margin:0 auto}.hl-center .hero .cta{justify-content:center}
+.stage{position:relative;padding:22px 16px 12px;background:var(--card);border-radius:var(--r);border:1px solid var(--line);display:grid;place-items:center}
+.stage svg{display:block;width:100%;max-width:400px;height:auto}.hero .stage svg{animation:bob 6s ease-in-out infinite}
+.stage small{margin-top:8px;font-size:12px;color:var(--mute);text-align:center}
+.c-neo .stage,.c-neo .card,.c-neo .panel{border:2px solid var(--ink);box-shadow:5px 5px 0 var(--acc)}
+.c-glass .stage,.c-glass .card,.c-glass .panel{background:color-mix(in srgb,var(--card) 72%,transparent);backdrop-filter:blur(10px);border:1px solid color-mix(in srgb,var(--acc) 30%,var(--line))}
+.mq{overflow:hidden;white-space:nowrap;background:var(--dk);padding:15px 0}.mq div{display:inline-block;animation:mq 30s linear infinite;font:400 24px var(--hf);text-transform:none;color:#fff;letter-spacing:-.02em}.mq span{margin:0 22px}.mq em{font-style:normal;color:var(--acc2)}
+section{padding:66px 0}.alt{background:var(--bg2)}
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:transform .3s,border-color .3s}.card:hover{transform:translateY(-5px);border-color:var(--acc)}
+.card .n{font:400 40px var(--hf);color:var(--acc);display:block;margin-bottom:10px}.card h3{font-size:26px;margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
+.pl{display:grid;gap:18px}.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}.panel+.panel{margin-top:12px}
+.panel h3{font-size:19px;margin-bottom:12px}
+.sg{display:flex;gap:8px;flex-wrap:wrap}.sg button{font:600 14px var(--bf);padding:10px 16px;border-radius:var(--br);border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;transition:.2s}.sg button.on{background:var(--acc);color:var(--on);border-color:var(--acc)}
+.sw{display:flex;gap:11px;flex-wrap:wrap}.sw button{width:44px;height:44px;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:.25s}.sw button.on{box-shadow:0 0 0 2.5px var(--acc);transform:scale(1.1)}
+input[type=text]{width:100%;padding:14px;border-radius:calc(var(--r)/2);border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+input[type=range]{width:100%;accent-color:var(--acc);height:34px}
+.sum{white-space:pre-line;font-size:14px;color:var(--mute);background:var(--bg2);border-radius:calc(var(--r)/2);padding:14px;margin:12px 0}
+.fn{font-size:13px;color:var(--mute);margin-top:10px}
+.st{display:grid;grid-template-columns:62px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line)}.st b{font:400 44px/1 var(--hf);color:var(--acc)}.st h3{font-size:25px;margin-bottom:4px}.st p{color:var(--mute);font-size:15px}
+.fq{border-bottom:1px solid var(--line)}.fq button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;background:none;border:0;color:var(--ink);font:600 16px var(--bf);text-align:left;cursor:pointer;outline:none;-webkit-appearance:none;appearance:none}
+.pm{position:relative;width:18px;height:18px;flex:none;transition:transform .45s cubic-bezier(.32,.72,0,1)}.pm::before,.pm::after{content:"";position:absolute;left:0;top:8px;width:18px;height:2.5px;background:var(--acc);transition:transform .45s cubic-bezier(.32,.72,0,1)}.pm::after{transform:rotate(90deg)}
+.fq.open .pm{transform:rotate(180deg)}.fq.open .pm::after{transform:rotate(0)}
+.fa{height:0;overflow:hidden;transition:height .55s cubic-bezier(.32,.72,0,1)}.fa p{color:var(--mute);font-size:15px;padding-bottom:20px;opacity:0;transform:translateY(-6px);transition:opacity .3s,transform .55s cubic-bezier(.32,.72,0,1)}.fq.open .fa p{opacity:1;transform:none;transition-delay:.1s}
+.fin{background:radial-gradient(circle at 88% 0,color-mix(in srgb,var(--acc) 45%,transparent),transparent 55%),var(--dk);color:#f3f1ec;border-radius:var(--r);padding:44px 26px}.fin h2{color:#fff}.fin h2 em{color:var(--acc2)}.fin .sub{color:#b9b6c9}.fin .btn.o{color:#fff;border-color:#fff}.fin .btn.o:hover{background:#fff;color:#111}.fin .tag{color:#fff;border-color:rgba(255,255,255,.4)}
+.rows{max-width:540px;margin-top:28px}.row{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:15px}.row span{color:#b9b6c9}.row b{font-weight:600;text-align:right}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:26px 22px 40px}
+.bar2{position:fixed;left:0;right:0;bottom:0;z-index:45;display:flex;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line)}.bar2 a{flex:1;padding:13px;font-size:14px}
+.rv{opacity:0;transform:translateY(26px);transition:.75s}.rv.in2{opacity:1;transform:none}
+.tl4{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:340px}.tl4 div{padding:30px 10px;text-align:center;border-radius:14px;background:var(--bg2);color:var(--mute);font:700 18px var(--hf);transition:.3s;border:2px solid transparent}.tl4 div.on{background:var(--acc);color:var(--on);transform:scale(1.04)}
+@media(min-width:820px){nav{display:flex}.hero .w{grid-template-columns:1.1fr 1fr;align-items:center}.hl-center .hero .w{grid-template-columns:1fr}.hl-center .stage{max-width:560px;margin:0 auto;width:100%}.rev .hero .ht{order:2}.pl{grid-template-columns:1fr 1fr}.bar2{display:none}body{padding-bottom:0}.fin{padding:66px}}
+@media(prefers-reduced-motion:reduce){.in{display:none}.hero *,.mq div{animation:none!important}.rv{opacity:1;transform:none;transition:none}.fa,.fa p,.pm,.pm::before,.pm::after{transition:none}}
+</style></head>
+<body class=" hl-split">
+<div class="in in-t"><b style="animation:none"><span style="display:inline-block;overflow:hidden;white-space:nowrap;width:0;--w:20ch;animation:ty 1.1s steps(19) .2s forwards;border-right:4px solid var(--acc2);vertical-align:bottom;font-size:clamp(26px,7vw,60px)">TORRES AGROPECUÁRIA</span></b></div>
+<div class="prog" id="pg"></div>
+<header><div class="w"><a class="logo" href="#top">Torres <span>Agropecuária</span></a><nav><a href="#sobre">A loja</a><a href="#interativo">Seu pedido</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a></nav><a class="btn wa" href="https://wa.me/5593981171468">WhatsApp</a></div></header>
+<main id="top">
+<div class="hero"><div class="w"><div class="ht"><span class="tag">Altamira · Agropecuária</span><h1>Do campo à <em>lida diária</em></h1><p class="lead">Produtos para lavoura e animais em Altamira. Fale com a gente pelo WhatsApp.</p><div class="cta"><a class="btn wa" href="https://wa.me/5593981171468">Chamar no WhatsApp</a><a class="btn o" href="#interativo">O que você precisa?</a></div></div><div class="stage" id="hs"><svg viewBox="0 0 300 200"><circle cx="230" cy="48" r="28" fill="#e8b445"/><path d="M0 120Q150 80 300 120V200H0Z" fill="#8aa65a"/><path d="M0 150Q150 112 300 150V200H0Z" fill="#5b7a2b"/><g stroke="#b8d27e" stroke-width="3"><path d="M30 200L90 130M70 200L120 134M110 200L150 138M150 200L180 142M190 200L210 146"/></g></svg><small>Prévia de conceito · fotos e produtos reais entram aqui</small></div></div></div>
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+<section id="sobre"><div class="w rv"><span class="tag">A loja</span><h2>Apoio para o <em>campo</em></h2><p class="sub">Tudo para quem trabalha com a terra e com os animais.</p><div class="cards"><div class="card"><span class="n">01</span><h3>Lavoura</h3><p>Produtos para quem cuida da terra.</p></div><div class="card"><span class="n">02</span><h3>Animais</h3><p>Produtos para quem cuida do rebanho.</p></div><div class="card"><span class="n">03</span><h3>Atendimento</h3><p>Tire dúvidas e consulte disponibilidade pelo WhatsApp.</p></div></div></div></section>
+<section class="alt" id="interativo"><div class="w rv"><span class="tag">Seu pedido</span><h2>Conte o que você <em>precisa</em></h2><p class="sub">Escolha a área e envie o pedido para a loja. A disponibilidade é confirmada pela equipe.</p>
+<div class="pl"><div class="stage" id="ps"><div id="psv"></div><small id="pn"></small></div><div id="pc"><div class="panel"><h3>O que você precisa?</h3><div class="sg" id="g-n"><button data-v="Lavoura" class="on">Lavoura</button><button data-v="Animais">Animais</button><button data-v="Ferramentas">Ferramentas</button><button data-v="Outros">Outros</button></div></div><div class="panel"><h3>Detalhes</h3><input type="text" id="dt" placeholder="Conte o que procura" autocomplete="off"></div><div class="panel"><h3>Seu pedido</h3><div class="sum" id="sm"></div><a class="btn wa" id="wl" href="#" target="_blank" rel="noopener" style="width:100%">Enviar no WhatsApp</a></div></div></div></div></section>
+<section><div class="w rv"><span class="tag">Como funciona</span><h2>Do pedido à <em>retirada</em></h2><p class="sub">&nbsp;</p><div class="st"><b>1</b><div><h3>Escolha</h3><p>Selecione a área e conte o que procura.</p></div></div><div class="st"><b>2</b><div><h3>Envie</h3><p>Mande o pedido pelo WhatsApp.</p></div></div><div class="st"><b>3</b><div><h3>Combine</h3><p>Confirme com a loja valores e retirada.</p></div></div></div></section>
+<section class="alt" id="faq"><div class="w rv"><span class="tag">Dúvidas</span><h2>Perguntas <em>frequentes</em></h2><p class="sub">&nbsp;</p><div class="fq"><button type="button" aria-expanded="false">O que a Torres oferece?<span class="pm"></span></button><div class="fa"><div><p>Produtos agropecuários, para lavoura e animais.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false">Onde fica?<span class="pm"></span></button><div class="fa"><div><p>Em Altamira. Chame no WhatsApp para confirmar endereço e horário.</p></div></div></div><div class="fq"><button type="button" aria-expanded="false">Como faço um pedido?<span class="pm"></span></button><div class="fa"><div><p>Escolha aqui e envie pelo WhatsApp, ou ligue para (93) 98117-1468.</p></div></div></div></div></section>
+<section id="contato"><div class="w rv"><div class="fin"><span class="tag">Contato</span><h2>Precisa de <em>algo para o campo?</em></h2><p class="sub">Chame a Torres Agropecuária no WhatsApp.</p><div class="cta"><a class="btn wa" href="https://wa.me/5593981171468">WhatsApp</a><a class="btn o" href="tel:+5593981171468">Ligar</a></div><div class="rows"><div class="row"><span>WhatsApp</span><b>(93) 98117-1468</b></div><div class="row"><span>Cidade</span><b>Altamira</b></div><div class="row"><span>Loja</span><b>Agropecuária</b></div></div></div></div></section>
+</main>
+<footer>© Torres Agropecuária. Demonstração de conceito, não é o site oficial.</footer>
+<div class="bar2"><a class="btn wa" href="https://wa.me/5593981171468">WhatsApp</a><a class="btn o" href="#interativo">Pedir</a></div>
+<script>
+var $=function(i){return document.getElementById(i)},PH="5593981171468",WA=true;
+function send(t){var a=$("wl");if(WA){a.href="https://wa.me/"+PH+"?text="+encodeURIComponent(t)}else{a.href="#";a.onclick=function(e){e.preventDefault();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){a.textContent="Copiado! Agora ligue"},function(){$("sm").textContent=t})}}}
+function chips(id,multi,cb){var e=$(id);e.onclick=function(ev){var b=ev.target.closest("button");if(!b)return;if(multi)b.classList.toggle("on");else[].forEach.call(e.children,function(x){x.classList.toggle("on",x===b)});cb()}}
+function sel(id){return [].filter.call($(id).children,function(x){return x.classList.contains("on")}).map(function(x){return x.dataset.v||x.textContent})}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+var m="";["Lavoura", "Animais", "Campo", "Agropecuária", "Altamira"].concat(["Lavoura", "Animais", "Campo", "Agropecuária", "Altamira"]).forEach(function(t){m+="<span>"+t+"</span><em>●</em>"});$("mq").innerHTML=m;
+(function(){var p=$("px");if(!p)return;for(var i=0;i<112;i++){var c=document.createElement("i");c.style.setProperty("--d",(1.2+Math.random()*.7)+"s");p.insertBefore(c,p.firstChild)}})();
+
+function ren(){var n=sel("g-n"),d=$("dt").value.trim();$("psv").innerHTML='<div class="tl4">'+["Lavoura","Animais","Ferramentas","Outros"].map(function(x){return '<div class="'+(n.indexOf(x)>-1?"on":"")+'">'+x+"</div>"}).join("")+"</div>";$("pn").textContent=n.join(" · ")||"Escolha ao lado";$("sm").textContent="Área: "+(n.join(", ")||"-")+"\nDetalhes: "+(d||"-");send("Olá, Torres Agropecuária! Preciso de produtos para: "+(n.join(", ").toLowerCase()||"agropecuária")+(d?". "+d:"")+".")}
+chips("g-n",1,ren);$("dt").oninput=ren;ren();
+function fh(f){var a=f.querySelector(".fa");a.style.height=f.classList.contains("open")?a.firstElementChild.offsetHeight+"px":"0px"}
+document.querySelectorAll(".fq button").forEach(function(b){b.addEventListener("mousedown",function(e){e.preventDefault()});b.addEventListener("click",function(){var f=b.parentNode,o=f.classList.toggle("open");b.setAttribute("aria-expanded",o);fh(f)})});
+addEventListener("resize",function(){document.querySelectorAll(".fq.open").forEach(fh)});
+addEventListener("scroll",function(){var h=document.documentElement;$("pg").style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight||1)*100)+"%"},{passive:true});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add("in2")})},{threshold:.1});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+</script>
+</body></html>
